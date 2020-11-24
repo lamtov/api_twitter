@@ -1,0 +1,46 @@
+
+<!doctype html>
+<title>Python Flask File Upload Example</title>
+<h4>Upload Information</h4>
+<h2>Select a file to upload</h2>
+<script src="/static/jquery.min.js"></script>
+<script type=text/javascript>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<form method="post" action="/api/api_twitter" enctype="multipart/form-data">
+    <dl>
+		<p>
+            <label for="file_user_data">file_user_data</label>
+			<input type="file" name="file_user_data" autocomplete="off" required>
+		</p>
+        <p>
+            <label for="file_picture">file_picture</label>
+			<input type="file" name="file_picture"  accept="image/*" autocomplete="off"   onchange="readURL(this);" required>
+		    <img id="blah" src="#" alt="your image" />
+        </p>
+        <p>
+            <label for="file_proxy">file_proxy</label>
+			<input type="file" name="file_proxy" autocomplete="off" required>
+		</p>
+        <p>
+            <label for="number_thread">So Luong</label>
+			<input type="number" name="number_thread" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>

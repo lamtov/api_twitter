@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>LAY DU LIEU TU THI TRUONG CHUNG KHOAN</title>
+        <script type="text/javascript" src="/static/jquery.min.js"></script>
+        <script type="text/javascript" src="/static/socket.io.min.js"></script>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            var dateFormat = "mm/dd/yy",
+                from = $("#from")
+                    .datepicker({
+                        defaultDate: "+1w",
+                        changeMonth: true,
+                        numberOfMonths: 3
+                    })
+                    .on("change", function () {
+                        to.datepicker("option", "minDate", getDate(this));
+                    }),
+                to = $("#to").datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: true,
+                    numberOfMonths: 3
+                })
+                    .on("change", function () {
+                        from.datepicker("option", "maxDate", getDate(this));
+                    });
+
+            function getDate(element) {
+                var date;
+                try {
+                    date = $.datepicker.parseDate(dateFormat, element.value);
+                } catch (error) {
+                    date = null;
+                }
+
+                return date;
+            }
+        });
+    </script>
+    </head>
+    <body>
+
+<form method="POST"  action="/api/chungkhoan">
+    <label for="ma">CHON MOT MA:</label>
+<select style="display:block;" id="ma" name="ma">
+    {%  for _id in list_ids %}
+  <option value="{{_id}}">{{_id}}</option>
+    {%  endfor %}
+</select>
+{%  for index in list_indexs %}
+  <input type="checkbox" id="{{index}}" name="{{index}}"  checked >
+    <label for="{{index}}" > {{index}} </label><br>
+    {%  endfor %}
+    <label for="from">From</label>
+<input type="text" id="from" name="from">
+<label for="to">to</label>
+<input type="text" id="to" name="to">
+    <div class="form-submit">
+                        <input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+                    </div>
+
+</form>
+    </body>
+</html>

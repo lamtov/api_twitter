@@ -1,0 +1,359 @@
+[2020-10-24 01:48:32.265] [ INFO    ] [_internal:_log:122] 1968  * Restarting with stat
+[2020-10-24 01:48:32.996] [ WARNING ] [_internal:_log:122] 6624  * Debugger is active!
+[2020-10-24 01:48:33.009] [ INFO    ] [_internal:_log:122] 6624  * Debugger PIN: 822-076-161
+[2020-10-24 01:48:33.013] [ INFO    ] [_internal:_log:122] 6624  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:48:44.839] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:44] "GET / HTTP/1.1" 200 -
+[2020-10-24 01:48:44.882] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:44] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+[2020-10-24 01:48:45.069] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:45] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+[2020-10-24 01:48:45.202] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:45] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+[2020-10-24 01:48:45.202] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:45] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+[2020-10-24 01:48:45.650] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:45] "GET /swagger.json HTTP/1.1" 200 -
+[2020-10-24 01:48:45.666] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:45] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+[2020-10-24 01:48:51.458] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:51] "GET /chungkhoan HTTP/1.1" 500 -
+[2020-10-24 01:48:51.765] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:51] "GET /chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 01:48:51.794] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:51] "GET /chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 01:48:51.794] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:51] "GET /chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 01:48:52.088] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:52] "GET /?__debugger__=yes&cmd=resource&f=more.png HTTP/1.1" 200 -
+[2020-10-24 01:48:52.090] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:52] "GET /?__debugger__=yes&cmd=resource&f=less.png HTTP/1.1" 200 -
+[2020-10-24 01:48:52.189] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:52] "GET /chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 01:48:52.192] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:52] "GET /chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 01:48:52.459] [ INFO    ] [_internal:_log:122] 6624 127.0.0.1 - - [24/Oct/2020 01:48:52] "GET /chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 01:51:52.126] [ INFO    ] [_internal:_log:122] 6624  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\__init__.py', reloading
+[2020-10-24 01:51:52.174] [ INFO    ] [_internal:_log:122] 1968  * Restarting with stat
+[2020-10-24 01:54:12.893] [ INFO    ] [_internal:_log:122] 3400  * Restarting with stat
+[2020-10-24 01:54:13.620] [ WARNING ] [_internal:_log:122] 5400  * Debugger is active!
+[2020-10-24 01:54:13.626] [ INFO    ] [_internal:_log:122] 5400  * Debugger PIN: 822-076-161
+[2020-10-24 01:54:13.633] [ INFO    ] [_internal:_log:122] 5400  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:54:17.079] [ INFO    ] [_internal:_log:122] 5400 127.0.0.1 - - [24/Oct/2020 01:54:17] "GET /chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:54:17.164] [ INFO    ] [_internal:_log:122] 5400 127.0.0.1 - - [24/Oct/2020 01:54:17] "GET /favicon.ico HTTP/1.1" 404 -
+[2020-10-24 01:54:21.818] [ INFO    ] [_internal:_log:122] 5400 127.0.0.1 - - [24/Oct/2020 01:54:21] "GET /chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:54:26.190] [ INFO    ] [_internal:_log:122] 5400 127.0.0.1 - - [24/Oct/2020 01:54:26] "GET / HTTP/1.1" 200 -
+[2020-10-24 01:54:26.489] [ INFO    ] [_internal:_log:122] 5400 127.0.0.1 - - [24/Oct/2020 01:54:26] "GET /swagger.json HTTP/1.1" 200 -
+[2020-10-24 01:54:47.280] [ INFO    ] [_internal:_log:122] 5400  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\__init__.py', reloading
+[2020-10-24 01:54:47.324] [ INFO    ] [_internal:_log:122] 3400  * Restarting with stat
+[2020-10-24 01:54:48.130] [ WARNING ] [_internal:_log:122] 1188  * Debugger is active!
+[2020-10-24 01:54:48.137] [ INFO    ] [_internal:_log:122] 1188  * Debugger PIN: 822-076-161
+[2020-10-24 01:54:48.154] [ INFO    ] [_internal:_log:122] 1188  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:54:48.547] [ INFO    ] [_internal:_log:122] 1188 127.0.0.1 - - [24/Oct/2020 01:54:48] "GET / HTTP/1.1" 200 -
+[2020-10-24 01:54:48.717] [ INFO    ] [_internal:_log:122] 1188 127.0.0.1 - - [24/Oct/2020 01:54:48] "GET /swagger.json HTTP/1.1" 200 -
+[2020-10-24 01:54:48.806] [ INFO    ] [_internal:_log:122] 1188 127.0.0.1 - - [24/Oct/2020 01:54:48] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+[2020-10-24 01:54:52.687] [ INFO    ] [_internal:_log:122] 1188 127.0.0.1 - - [24/Oct/2020 01:54:52] "GET /chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:54:55.090] [ INFO    ] [_internal:_log:122] 15312  * Restarting with stat
+[2020-10-24 01:54:55.837] [ WARNING ] [_internal:_log:122] 8884  * Debugger is active!
+[2020-10-24 01:54:55.843] [ INFO    ] [_internal:_log:122] 8884  * Debugger PIN: 822-076-161
+[2020-10-24 01:54:55.849] [ INFO    ] [_internal:_log:122] 8884  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:55:03.474] [ INFO    ] [_internal:_log:122] 8884  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 01:55:03.525] [ INFO    ] [_internal:_log:122] 15312  * Restarting with stat
+[2020-10-24 01:55:04.284] [ WARNING ] [_internal:_log:122] 4152  * Debugger is active!
+[2020-10-24 01:55:04.290] [ INFO    ] [_internal:_log:122] 4152  * Debugger PIN: 822-076-161
+[2020-10-24 01:55:04.296] [ INFO    ] [_internal:_log:122] 4152  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:55:05.670] [ INFO    ] [_internal:_log:122] 12940  * Restarting with stat
+[2020-10-24 01:55:06.419] [ WARNING ] [_internal:_log:122] 6876  * Debugger is active!
+[2020-10-24 01:55:06.425] [ INFO    ] [_internal:_log:122] 6876  * Debugger PIN: 822-076-161
+[2020-10-24 01:55:06.431] [ INFO    ] [_internal:_log:122] 6876  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:55:07.694] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 01:55:07] "GET /chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:55:08.463] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 01:55:08] "GET /chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:55:08.753] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 01:55:08] "GET /chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:55:30.265] [ INFO    ] [_internal:_log:122] 6876  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\app.py', reloading
+[2020-10-24 01:55:30.307] [ INFO    ] [_internal:_log:122] 12940  * Restarting with stat
+[2020-10-24 01:55:31.068] [ WARNING ] [_internal:_log:122] 14096  * Debugger is active!
+[2020-10-24 01:55:31.074] [ INFO    ] [_internal:_log:122] 14096  * Debugger PIN: 822-076-161
+[2020-10-24 01:55:31.080] [ INFO    ] [_internal:_log:122] 14096  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:55:36.074] [ INFO    ] [_internal:_log:122] 14096 127.0.0.1 - - [24/Oct/2020 01:55:36] "GET /api/chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:55:48.405] [ INFO    ] [_internal:_log:122] 14096  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 01:55:48.448] [ INFO    ] [_internal:_log:122] 12940  * Restarting with stat
+[2020-10-24 01:55:49.196] [ WARNING ] [_internal:_log:122] 588  * Debugger is active!
+[2020-10-24 01:55:49.202] [ INFO    ] [_internal:_log:122] 588  * Debugger PIN: 822-076-161
+[2020-10-24 01:55:49.209] [ INFO    ] [_internal:_log:122] 588  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:55:56.841] [ INFO    ] [_internal:_log:122] 588  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\__init__.py', reloading
+[2020-10-24 01:55:56.887] [ INFO    ] [_internal:_log:122] 12940  * Restarting with stat
+[2020-10-24 01:55:57.668] [ WARNING ] [_internal:_log:122] 2788  * Debugger is active!
+[2020-10-24 01:55:57.674] [ INFO    ] [_internal:_log:122] 2788  * Debugger PIN: 822-076-161
+[2020-10-24 01:55:57.676] [ INFO    ] [_internal:_log:122] 2788  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:55:59.363] [ INFO    ] [_internal:_log:122] 18800  * Restarting with stat
+[2020-10-24 01:56:00.122] [ WARNING ] [_internal:_log:122] 13364  * Debugger is active!
+[2020-10-24 01:56:00.128] [ INFO    ] [_internal:_log:122] 13364  * Debugger PIN: 822-076-161
+[2020-10-24 01:56:00.134] [ INFO    ] [_internal:_log:122] 13364  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:56:00.981] [ INFO    ] [_internal:_log:122] 13364 127.0.0.1 - - [24/Oct/2020 01:56:00] "GET /api/chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:56:02.389] [ INFO    ] [_internal:_log:122] 13364 127.0.0.1 - - [24/Oct/2020 01:56:02] "GET /api/chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:56:03.075] [ INFO    ] [_internal:_log:122] 13364 127.0.0.1 - - [24/Oct/2020 01:56:03] "GET /api/chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:56:04.125] [ INFO    ] [_internal:_log:122] 13364 127.0.0.1 - - [24/Oct/2020 01:56:04] "GET /api/chungkhoan HTTP/1.1" 404 -
+[2020-10-24 01:56:56.130] [ INFO    ] [_internal:_log:122] 13364  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\app.py', reloading
+[2020-10-24 01:56:56.168] [ INFO    ] [_internal:_log:122] 18800  * Restarting with stat
+[2020-10-24 01:56:56.918] [ WARNING ] [_internal:_log:122] 19444  * Debugger is active!
+[2020-10-24 01:56:56.925] [ INFO    ] [_internal:_log:122] 19444  * Debugger PIN: 822-076-161
+[2020-10-24 01:56:56.931] [ INFO    ] [_internal:_log:122] 19444  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:56:58.932] [ INFO    ] [_internal:_log:122] 3380  * Restarting with stat
+[2020-10-24 01:56:59.689] [ WARNING ] [_internal:_log:122] 7772  * Debugger is active!
+[2020-10-24 01:56:59.695] [ INFO    ] [_internal:_log:122] 7772  * Debugger PIN: 822-076-161
+[2020-10-24 01:56:59.702] [ INFO    ] [_internal:_log:122] 7772  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:57:06.104] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 01:57:06.119] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 01:57:06.330] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 01:57:06.436] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 01:57:06.452] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/?__debugger__=yes&cmd=resource&f=less.png HTTP/1.1" 200 -
+[2020-10-24 01:57:06.452] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/?__debugger__=yes&cmd=resource&f=more.png HTTP/1.1" 200 -
+[2020-10-24 01:57:06.804] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 01:57:06.809] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:06] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 01:57:07.060] [ INFO    ] [_internal:_log:122] 7772 127.0.0.1 - - [24/Oct/2020 01:57:07] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 01:58:15.287] [ INFO    ] [_internal:_log:122] 7772  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 01:58:15.335] [ INFO    ] [_internal:_log:122] 3380  * Restarting with stat
+[2020-10-24 01:58:16.482] [ INFO    ] [_internal:_log:122] 17576  * Restarting with stat
+[2020-10-24 01:58:17.219] [ WARNING ] [_internal:_log:122] 18480  * Debugger is active!
+[2020-10-24 01:58:17.225] [ INFO    ] [_internal:_log:122] 18480  * Debugger PIN: 822-076-161
+[2020-10-24 01:58:17.231] [ INFO    ] [_internal:_log:122] 18480  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:58:25.780] [ INFO    ] [_internal:_log:122] 18480 127.0.0.1 - - [24/Oct/2020 01:58:25] "GET /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 01:58:25.798] [ INFO    ] [_internal:_log:122] 18480 127.0.0.1 - - [24/Oct/2020 01:58:25] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 01:58:26.009] [ INFO    ] [_internal:_log:122] 18480 127.0.0.1 - - [24/Oct/2020 01:58:26] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 01:58:26.102] [ INFO    ] [_internal:_log:122] 18480 127.0.0.1 - - [24/Oct/2020 01:58:26] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 01:58:26.485] [ INFO    ] [_internal:_log:122] 18480 127.0.0.1 - - [24/Oct/2020 01:58:26] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 01:58:26.490] [ INFO    ] [_internal:_log:122] 18480 127.0.0.1 - - [24/Oct/2020 01:58:26] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 01:58:26.745] [ INFO    ] [_internal:_log:122] 18480 127.0.0.1 - - [24/Oct/2020 01:58:26] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 01:59:17.302] [ INFO    ] [_internal:_log:122] 14692  * Restarting with stat
+[2020-10-24 01:59:18.047] [ WARNING ] [_internal:_log:122] 4488  * Debugger is active!
+[2020-10-24 01:59:18.053] [ INFO    ] [_internal:_log:122] 4488  * Debugger PIN: 822-076-161
+[2020-10-24 01:59:18.060] [ INFO    ] [_internal:_log:122] 4488  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 01:59:20.578] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 01:59:20] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 01:59:20.601] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 01:59:20] "GET /static/jquery.min.js HTTP/1.1" 200 -
+[2020-10-24 01:59:20.815] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 01:59:20] "GET /static/socket.io.min.js HTTP/1.1" 200 -
+[2020-10-24 02:00:33.685] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:00:33] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:01:34.356] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:34] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:01:42.017] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:42] "POST /chungkhoan HTTP/1.1" 404 -
+[2020-10-24 02:01:57.181] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:57] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:01:58.325] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:58] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 02:01:58.607] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:58] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 02:01:58.653] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:58] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 02:01:58.654] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:58] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 02:01:59.034] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:59] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 02:01:59.037] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:59] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:01:59.295] [ INFO    ] [_internal:_log:122] 4488 127.0.0.1 - - [24/Oct/2020 02:01:59] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:02:29.368] [ INFO    ] [_internal:_log:122] 19108  * Restarting with stat
+[2020-10-24 02:02:30.861] [ WARNING ] [_internal:_log:122] 17820  * Debugger is active!
+[2020-10-24 02:02:30.871] [ INFO    ] [_internal:_log:122] 17820  * Debugger PIN: 822-076-161
+[2020-10-24 02:02:30.883] [ INFO    ] [_internal:_log:122] 17820  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:02:34.171] [ INFO    ] [_internal:_log:122] 17820 127.0.0.1 - - [24/Oct/2020 02:02:34] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:03:31.660] [ INFO    ] [_internal:_log:122] 17820  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:03:31.726] [ INFO    ] [_internal:_log:122] 19108  * Restarting with stat
+[2020-10-24 02:03:35.261] [ INFO    ] [_internal:_log:122] 11340  * Restarting with stat
+[2020-10-24 02:03:36.052] [ WARNING ] [_internal:_log:122] 16596  * Debugger is active!
+[2020-10-24 02:03:36.058] [ INFO    ] [_internal:_log:122] 16596  * Debugger PIN: 822-076-161
+[2020-10-24 02:03:36.065] [ INFO    ] [_internal:_log:122] 16596  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:03:38.800] [ INFO    ] [_internal:_log:122] 16596 127.0.0.1 - - [24/Oct/2020 02:03:38] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:03:43.910] [ INFO    ] [_internal:_log:122] 16596 127.0.0.1 - - [24/Oct/2020 02:03:43] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:04:12.374] [ INFO    ] [_internal:_log:122] 16596 127.0.0.1 - - [24/Oct/2020 02:04:12] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:05:13.381] [ INFO    ] [_internal:_log:122] 16596 127.0.0.1 - - [24/Oct/2020 02:05:13] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:05:25.279] [ INFO    ] [_internal:_log:122] 16596 127.0.0.1 - - [24/Oct/2020 02:05:25] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:05:40.120] [ INFO    ] [_internal:_log:122] 10660  * Restarting with stat
+[2020-10-24 02:05:40.850] [ WARNING ] [_internal:_log:122] 10112  * Debugger is active!
+[2020-10-24 02:05:40.857] [ INFO    ] [_internal:_log:122] 10112  * Debugger PIN: 822-076-161
+[2020-10-24 02:05:40.863] [ INFO    ] [_internal:_log:122] 10112  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:05:42.338] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:05:42] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:06:46.326] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:06:46] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:06:58.006] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:06:58] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:15.634] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:15] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:20.469] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:20] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:21.994] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:21] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:25.643] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:25] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:35.244] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:35] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:42.201] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:42] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:50.043] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:50] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:09:52.837] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:09:52] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:16.136] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:16] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:17.515] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:17] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:18.472] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:18] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:19.226] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:19] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:41.488] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:41] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:42.395] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:42] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:42.697] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:42] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:47.441] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:47] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:10:49.523] [ INFO    ] [_internal:_log:122] 10112 127.0.0.1 - - [24/Oct/2020 02:10:49] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:12:03.652] [ INFO    ] [_internal:_log:122] 10112  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:12:03.692] [ INFO    ] [_internal:_log:122] 10660  * Restarting with stat
+[2020-10-24 02:12:04.452] [ WARNING ] [_internal:_log:122] 18344  * Debugger is active!
+[2020-10-24 02:12:04.458] [ INFO    ] [_internal:_log:122] 18344  * Debugger PIN: 822-076-161
+[2020-10-24 02:12:04.465] [ INFO    ] [_internal:_log:122] 18344  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:13:10.518] [ INFO    ] [_internal:_log:122] 18344  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:13:10.555] [ INFO    ] [_internal:_log:122] 10660  * Restarting with stat
+[2020-10-24 02:13:11.312] [ WARNING ] [_internal:_log:122] 12456  * Debugger is active!
+[2020-10-24 02:13:11.319] [ INFO    ] [_internal:_log:122] 12456  * Debugger PIN: 822-076-161
+[2020-10-24 02:13:11.325] [ INFO    ] [_internal:_log:122] 12456  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:16:05.834] [ INFO    ] [_internal:_log:122] 12456  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:16:05.873] [ INFO    ] [_internal:_log:122] 10660  * Restarting with stat
+[2020-10-24 02:16:06.640] [ WARNING ] [_internal:_log:122] 17360  * Debugger is active!
+[2020-10-24 02:16:06.647] [ INFO    ] [_internal:_log:122] 17360  * Debugger PIN: 822-076-161
+[2020-10-24 02:16:06.654] [ INFO    ] [_internal:_log:122] 17360  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:38:37.556] [ INFO    ] [_internal:_log:122] 17360  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:38:37.595] [ INFO    ] [_internal:_log:122] 10660  * Restarting with stat
+[2020-10-24 02:46:31.167] [ INFO    ] [_internal:_log:122] 16684  * Restarting with stat
+[2020-10-24 02:46:32.245] [ WARNING ] [_internal:_log:122] 1144  * Debugger is active!
+[2020-10-24 02:46:32.251] [ INFO    ] [_internal:_log:122] 1144  * Debugger PIN: 822-076-161
+[2020-10-24 02:46:32.259] [ INFO    ] [_internal:_log:122] 1144  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:46:41.359] [ INFO    ] [_internal:_log:122] 1144 127.0.0.1 - - [24/Oct/2020 02:46:41] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 02:46:41.382] [ INFO    ] [_internal:_log:122] 1144 127.0.0.1 - - [24/Oct/2020 02:46:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 02:46:41.597] [ INFO    ] [_internal:_log:122] 1144 127.0.0.1 - - [24/Oct/2020 02:46:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 02:46:41.687] [ INFO    ] [_internal:_log:122] 1144 127.0.0.1 - - [24/Oct/2020 02:46:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 02:46:42.154] [ INFO    ] [_internal:_log:122] 1144 127.0.0.1 - - [24/Oct/2020 02:46:42] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 02:46:42.156] [ INFO    ] [_internal:_log:122] 1144 127.0.0.1 - - [24/Oct/2020 02:46:42] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:46:42.409] [ INFO    ] [_internal:_log:122] 1144 127.0.0.1 - - [24/Oct/2020 02:46:42] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:48:47.722] [ INFO    ] [_internal:_log:122] 16936  * Restarting with stat
+[2020-10-24 02:48:48.898] [ WARNING ] [_internal:_log:122] 16556  * Debugger is active!
+[2020-10-24 02:48:48.904] [ INFO    ] [_internal:_log:122] 16556  * Debugger PIN: 822-076-161
+[2020-10-24 02:48:48.910] [ INFO    ] [_internal:_log:122] 16556  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:49:01.257] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:01] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:49:06.987] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:06] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 02:49:07.006] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:07] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 02:49:07.324] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:07] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 02:49:07.325] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:07] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 02:49:07.765] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:07] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 02:49:07.781] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:07] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:49:08.031] [ INFO    ] [_internal:_log:122] 16556 127.0.0.1 - - [24/Oct/2020 02:49:08] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:49:53.527] [ INFO    ] [_internal:_log:122] 16556  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:49:53.613] [ INFO    ] [_internal:_log:122] 16936  * Restarting with stat
+[2020-10-24 02:49:54.621] [ WARNING ] [_internal:_log:122] 17700  * Debugger is active!
+[2020-10-24 02:49:54.627] [ INFO    ] [_internal:_log:122] 17700  * Debugger PIN: 822-076-161
+[2020-10-24 02:49:54.633] [ INFO    ] [_internal:_log:122] 17700  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:49:56.547] [ INFO    ] [_internal:_log:122] 7364  * Restarting with stat
+[2020-10-24 02:49:57.550] [ WARNING ] [_internal:_log:122] 14928  * Debugger is active!
+[2020-10-24 02:49:57.556] [ INFO    ] [_internal:_log:122] 14928  * Debugger PIN: 822-076-161
+[2020-10-24 02:49:57.562] [ INFO    ] [_internal:_log:122] 14928  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:50:01.522] [ INFO    ] [_internal:_log:122] 14928 127.0.0.1 - - [24/Oct/2020 02:50:01] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 02:50:01.544] [ INFO    ] [_internal:_log:122] 14928 127.0.0.1 - - [24/Oct/2020 02:50:01] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 02:50:01.856] [ INFO    ] [_internal:_log:122] 14928 127.0.0.1 - - [24/Oct/2020 02:50:01] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 02:50:01.859] [ INFO    ] [_internal:_log:122] 14928 127.0.0.1 - - [24/Oct/2020 02:50:01] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 02:50:02.279] [ INFO    ] [_internal:_log:122] 14928 127.0.0.1 - - [24/Oct/2020 02:50:02] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 02:50:02.281] [ INFO    ] [_internal:_log:122] 14928 127.0.0.1 - - [24/Oct/2020 02:50:02] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:50:02.523] [ INFO    ] [_internal:_log:122] 14928 127.0.0.1 - - [24/Oct/2020 02:50:02] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:50:41.183] [ INFO    ] [_internal:_log:122] 14928  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:50:41.258] [ INFO    ] [_internal:_log:122] 7364  * Restarting with stat
+[2020-10-24 02:50:42.370] [ WARNING ] [_internal:_log:122] 17376  * Debugger is active!
+[2020-10-24 02:50:42.376] [ INFO    ] [_internal:_log:122] 17376  * Debugger PIN: 822-076-161
+[2020-10-24 02:50:42.383] [ INFO    ] [_internal:_log:122] 17376  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:50:43.843] [ INFO    ] [_internal:_log:122] 2636  * Restarting with stat
+[2020-10-24 02:50:44.821] [ WARNING ] [_internal:_log:122] 8096  * Debugger is active!
+[2020-10-24 02:50:44.827] [ INFO    ] [_internal:_log:122] 8096  * Debugger PIN: 822-076-161
+[2020-10-24 02:50:44.834] [ INFO    ] [_internal:_log:122] 8096  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:50:52.066] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:50:52] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:53:18.435] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:53:18] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:53:21.022] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:53:21] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:55:05.514] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:05] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:55:05.547] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:05] "GET /resources/demos/style.css HTTP/1.1" 404 -
+[2020-10-24 02:55:48.097] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:48] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 02:55:48.374] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:48] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 02:55:48.437] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:48] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 02:55:48.438] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:48] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 02:55:48.840] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:48] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 02:55:48.843] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:48] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:55:49.081] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:55:49] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 02:56:04.636] [ INFO    ] [_internal:_log:122] 8096 127.0.0.1 - - [24/Oct/2020 02:56:04] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:59:09.828] [ INFO    ] [_internal:_log:122] 8096  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 02:59:09.907] [ INFO    ] [_internal:_log:122] 2636  * Restarting with stat
+[2020-10-24 02:59:10.970] [ WARNING ] [_internal:_log:122] 14520  * Debugger is active!
+[2020-10-24 02:59:10.976] [ INFO    ] [_internal:_log:122] 14520  * Debugger PIN: 822-076-161
+[2020-10-24 02:59:10.983] [ INFO    ] [_internal:_log:122] 14520  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:59:13.511] [ INFO    ] [_internal:_log:122] 17012  * Restarting with stat
+[2020-10-24 02:59:14.524] [ WARNING ] [_internal:_log:122] 592  * Debugger is active!
+[2020-10-24 02:59:14.530] [ INFO    ] [_internal:_log:122] 592  * Debugger PIN: 822-076-161
+[2020-10-24 02:59:14.536] [ INFO    ] [_internal:_log:122] 592  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 02:59:50.745] [ INFO    ] [_internal:_log:122] 592 127.0.0.1 - - [24/Oct/2020 02:59:50] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:59:53.287] [ INFO    ] [_internal:_log:122] 592 127.0.0.1 - - [24/Oct/2020 02:59:53] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 02:59:53.306] [ INFO    ] [_internal:_log:122] 592 127.0.0.1 - - [24/Oct/2020 02:59:53] "GET /resources/demos/style.css HTTP/1.1" 404 -
+[2020-10-24 03:00:21.242] [ INFO    ] [_internal:_log:122] 592 127.0.0.1 - - [24/Oct/2020 03:00:21] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:18:20.873] [ INFO    ] [_internal:_log:122] 592  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:18:20.966] [ INFO    ] [_internal:_log:122] 17012  * Restarting with stat
+[2020-10-24 03:18:22.025] [ WARNING ] [_internal:_log:122] 3028  * Debugger is active!
+[2020-10-24 03:18:22.031] [ INFO    ] [_internal:_log:122] 3028  * Debugger PIN: 822-076-161
+[2020-10-24 03:18:22.038] [ INFO    ] [_internal:_log:122] 3028  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:18:32.182] [ INFO    ] [_internal:_log:122] 3028  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:18:32.255] [ INFO    ] [_internal:_log:122] 17012  * Restarting with stat
+[2020-10-24 03:18:33.226] [ WARNING ] [_internal:_log:122] 19136  * Debugger is active!
+[2020-10-24 03:18:33.232] [ INFO    ] [_internal:_log:122] 19136  * Debugger PIN: 822-076-161
+[2020-10-24 03:18:33.239] [ INFO    ] [_internal:_log:122] 19136  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:19:15.720] [ INFO    ] [_internal:_log:122] 19136  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:19:15.781] [ INFO    ] [_internal:_log:122] 17012  * Restarting with stat
+[2020-10-24 03:19:16.798] [ WARNING ] [_internal:_log:122] 19220  * Debugger is active!
+[2020-10-24 03:19:16.805] [ INFO    ] [_internal:_log:122] 19220  * Debugger PIN: 822-076-161
+[2020-10-24 03:19:16.811] [ INFO    ] [_internal:_log:122] 19220  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:19:39.164] [ INFO    ] [_internal:_log:122] 19220  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:19:39.227] [ INFO    ] [_internal:_log:122] 17012  * Restarting with stat
+[2020-10-24 03:19:41.178] [ INFO    ] [_internal:_log:122] 17264  * Restarting with stat
+[2020-10-24 03:19:42.150] [ WARNING ] [_internal:_log:122] 2188  * Debugger is active!
+[2020-10-24 03:19:42.156] [ INFO    ] [_internal:_log:122] 2188  * Debugger PIN: 822-076-161
+[2020-10-24 03:19:42.163] [ INFO    ] [_internal:_log:122] 2188  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:19:48.687] [ INFO    ] [_internal:_log:122] 2188 127.0.0.1 - - [24/Oct/2020 03:19:48] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:19:48.707] [ INFO    ] [_internal:_log:122] 2188 127.0.0.1 - - [24/Oct/2020 03:19:48] "GET /resources/demos/style.css HTTP/1.1" 404 -
+[2020-10-24 03:19:48.939] [ INFO    ] [_internal:_log:122] 2188 127.0.0.1 - - [24/Oct/2020 03:19:48] "GET /resources/demos/style.css HTTP/1.1" 404 -
+[2020-10-24 03:20:00.166] [ INFO    ] [_internal:_log:122] 2188 127.0.0.1 - - [24/Oct/2020 03:20:00] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:21:25.196] [ INFO    ] [_internal:_log:122] 2188  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:21:25.286] [ INFO    ] [_internal:_log:122] 17264  * Restarting with stat
+[2020-10-24 03:21:26.262] [ WARNING ] [_internal:_log:122] 16512  * Debugger is active!
+[2020-10-24 03:21:26.268] [ INFO    ] [_internal:_log:122] 16512  * Debugger PIN: 822-076-161
+[2020-10-24 03:21:26.275] [ INFO    ] [_internal:_log:122] 16512  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:21:28.803] [ INFO    ] [_internal:_log:122] 4144  * Restarting with stat
+[2020-10-24 03:21:29.790] [ WARNING ] [_internal:_log:122] 2132  * Debugger is active!
+[2020-10-24 03:21:29.796] [ INFO    ] [_internal:_log:122] 2132  * Debugger PIN: 822-076-161
+[2020-10-24 03:21:29.803] [ INFO    ] [_internal:_log:122] 2132  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:21:32.176] [ INFO    ] [_internal:_log:122] 2132  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:21:32.242] [ INFO    ] [_internal:_log:122] 4144  * Restarting with stat
+[2020-10-24 03:21:33.725] [ INFO    ] [_internal:_log:122] 8884  * Restarting with stat
+[2020-10-24 03:21:34.695] [ WARNING ] [_internal:_log:122] 14240  * Debugger is active!
+[2020-10-24 03:21:34.703] [ INFO    ] [_internal:_log:122] 14240  * Debugger PIN: 822-076-161
+[2020-10-24 03:21:34.710] [ INFO    ] [_internal:_log:122] 14240  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:22:16.122] [ INFO    ] [_internal:_log:122] 14240  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:22:16.182] [ INFO    ] [_internal:_log:122] 8884  * Restarting with stat
+[2020-10-24 03:22:17.191] [ WARNING ] [_internal:_log:122] 17268  * Debugger is active!
+[2020-10-24 03:22:17.197] [ INFO    ] [_internal:_log:122] 17268  * Debugger PIN: 822-076-161
+[2020-10-24 03:22:17.203] [ INFO    ] [_internal:_log:122] 17268  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:22:23.285] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:23] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:22:23.314] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:23] "GET /resources/demos/style.css HTTP/1.1" 404 -
+[2020-10-24 03:22:23.520] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:23] "GET /resources/demos/style.css HTTP/1.1" 404 -
+[2020-10-24 03:22:32.121] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:32] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 03:22:32.142] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:32] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 03:22:32.143] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:32] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 03:22:32.452] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:32] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 03:22:32.819] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:32] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 03:22:32.822] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:32] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 03:22:33.083] [ INFO    ] [_internal:_log:122] 17268 127.0.0.1 - - [24/Oct/2020 03:22:33] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 03:22:53.662] [ INFO    ] [_internal:_log:122] 17268  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:22:53.783] [ INFO    ] [_internal:_log:122] 8884  * Restarting with stat
+[2020-10-24 03:22:55.859] [ INFO    ] [_internal:_log:122] 17740  * Restarting with stat
+[2020-10-24 03:22:56.910] [ WARNING ] [_internal:_log:122] 18644  * Debugger is active!
+[2020-10-24 03:22:56.918] [ INFO    ] [_internal:_log:122] 18644  * Debugger PIN: 822-076-161
+[2020-10-24 03:22:56.925] [ INFO    ] [_internal:_log:122] 18644  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:23:02.791] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:02] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:23:37.127] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:37] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 03:23:37.313] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:37] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 03:23:37.472] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:37] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 03:23:37.473] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:37] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 03:23:37.864] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:37] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 03:23:37.867] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:37] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 03:23:38.124] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:38] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 03:23:51.938] [ INFO    ] [_internal:_log:122] 18644 127.0.0.1 - - [24/Oct/2020 03:23:51] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:24:26.686] [ INFO    ] [_internal:_log:122] 18644  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:24:26.789] [ INFO    ] [_internal:_log:122] 17740  * Restarting with stat
+[2020-10-24 03:24:27.785] [ WARNING ] [_internal:_log:122] 16740  * Debugger is active!
+[2020-10-24 03:24:27.791] [ INFO    ] [_internal:_log:122] 16740  * Debugger PIN: 822-076-161
+[2020-10-24 03:24:27.798] [ INFO    ] [_internal:_log:122] 16740  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:24:28.854] [ INFO    ] [_internal:_log:122] 11272  * Restarting with stat
+[2020-10-24 03:24:29.846] [ WARNING ] [_internal:_log:122] 6876  * Debugger is active!
+[2020-10-24 03:24:29.853] [ INFO    ] [_internal:_log:122] 6876  * Debugger PIN: 822-076-161
+[2020-10-24 03:24:29.859] [ INFO    ] [_internal:_log:122] 6876  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:24:32.055] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:32] "GET /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:24:32.085] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:32] "GET /resources/demos/style.css HTTP/1.1" 404 -
+[2020-10-24 03:24:40.802] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:40] "POST /api/chungkhoan HTTP/1.1" 500 -
+[2020-10-24 03:24:40.950] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:40] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-10-24 03:24:41.132] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-10-24 03:24:41.132] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-10-24 03:24:41.510] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-10-24 03:24:41.525] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 03:24:41.782] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:41] "GET /api/chungkhoan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-10-24 03:24:56.671] [ INFO    ] [_internal:_log:122] 6876 127.0.0.1 - - [24/Oct/2020 03:24:56] "POST /api/chungkhoan HTTP/1.1" 200 -
+[2020-10-24 03:25:43.122] [ INFO    ] [_internal:_log:122] 6876  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\controllers\\data_chungkhoan\\routes.py', reloading
+[2020-10-24 03:25:43.209] [ INFO    ] [_internal:_log:122] 11272  * Restarting with stat
+[2020-10-24 03:25:44.204] [ WARNING ] [_internal:_log:122] 15276  * Debugger is active!
+[2020-10-24 03:25:44.210] [ INFO    ] [_internal:_log:122] 15276  * Debugger PIN: 822-076-161
+[2020-10-24 03:25:44.217] [ INFO    ] [_internal:_log:122] 15276  * Running on http://127.0.0.1:3006/ (Press CTRL+C to quit)
+[2020-10-24 03:28:04.862] [ INFO    ] [_internal:_log:122] 15276  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_CHUNGKHOAN\\CHUNGKHOAN_SERVER\\app.py', reloading
+[2020-10-24 03:28:04.937] [ INFO    ] [_internal:_log:122] 11272  * Restarting with stat
+[2020-10-24 03:28:05.937] [ WARNING ] [_internal:_log:122] 17812  * Debugger is active!
+[2020-10-24 03:28:05.943] [ INFO    ] [_internal:_log:122] 17812  * Debugger PIN: 822-076-161
+[2020-10-24 03:28:07.065] [ INFO    ] [_internal:_log:122] 17812  * Running on http://0.0.0.0:3006/ (Press CTRL+C to quit)
