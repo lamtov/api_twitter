@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter Publisher Tool</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/css/app.css">
+	<script src="/static/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/socket.io.min.js"></script>
+	<script type=text/javascript>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    var socket;
+        $(document).ready(function () {
+			socket_spam_infos = io.connect('http://' + document.domain + ':' + location.port + '/spam_infos');
+			socket_spam_infos.on('update_spam_infos', function (data) {
+				$("#number_users_spam").text(data['number_users_spam']);
+				$("#number_posts_spam").text(data['number_posts_spam']);
+				$("#number_locked_spam").text(data['number_locked_spam']);
+				console.log(data)
+			});
+		});
+</script>
+</head>
+<body>
+	<div class="container bordered" style="padding-top: 15px; margin-top: 50px">
+		<div class="row">
+			<div class="col-12">
+				<h1 id="title-app">Twitter Publisher Tool</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col" style="margin-top: 25px; margin-bottom: 30px;">
+				<div style="float: left;">
+					<div class="spinner-border"  role="status">
+					</div>
+				</div>
+				<div style="margin-top: 5px; padding-left: 45px;">
+					<span>Running ...</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-2">
+				<div class="statis statis-success">
+					<div class="statis-title">Users spam</div>
+					<div class="statis-counter">
+						<span id="number_users_spam">12</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<div class="statis">
+					<div class="statis-title">Posts</div>
+					<div class="statis-counter">
+						<span id="number_posts_spam">12</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<div class="statis statis-danger">
+					<div class="statis-title">Locked</div>
+					<div class="statis-counter">
+						<span id="number_locked_spam">12</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-app mt-30">
+			<div class="row">
+				<div class="col-3">
+					<form method="post" action="/index" enctype="multipart/form-data">
+					  <div class="form-group">
+					    <label for="file_user_data">Twitter users</label>
+					    <input type="file" name="file_user_data" class="form-control" placeholder="Enter path file">
+					  </div>
+					  <div class="form-group">
+					    <label for="spam_message">Spam Message</label>
+					    <input type="text" name="spam_message" class="form-control" placeholder="Enter Spam Message Here">
+					  </div>
+						<div class="form-group">
+							<label for="file_picture">file_picture</label>
+							<input type="file" name="file_picture" class="form-control"  accept="image/*" autocomplete="off"   onchange="readURL(this);" required>
+							<img id="blah" src="#" alt="your image" />
+						</div>
+					  <div class="form-group">
+					    <label for="number_threads">So Luong Thread</label>
+					    <input type="number" class="form-control" name="number_threads" autocomplete="off" value="1" required>
+					  </div>
+					  <div class="form-group">
+					    <label for="file_proxy">Proxy</label>
+					    <input type="file" name="file_proxy" class="form-control"  autocomplete="off"  placeholder="Enter path file" required>
+					  </div>
+
+			  		   <div class="btn-group" style="width: 100%; margin-top: 50px;">
+			  		   		<button type="submit" class="btn btn-primary" value="Submit" style="width: 50%; min-height: 45px;">Update</button>
+			  		   </div>
+
+					</form>
+					<button type="submit" class="btn btn-danger"  style="width: 50%; min-height: 45px;">Stop</button>
+				</div>
+
+				<div class="col-9">
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Data</th>
+									<th>Users Spam</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>24</td>
+									<td><span class="status-running">Running</span></td>
+								</tr>
+
+								<tr>
+									<td>2</td>
+									<td>2</td>
+									<td>24</td>
+									<td><span class="status-running">Running</span></td>
+								</tr>
+
+								<tr>
+									<td>3</td>
+									<td>3</td>
+									<td>24</td>
+									<td><span class="status-error">Error</span></td>
+								</tr>
+
+								<tr>
+									<td>4</td>
+									<td>4</td>
+									<td>24</td>
+									<td><span class="status-error">Error</span></td>
+								</tr>
+
+								<tr>
+									<td>5</td>
+									<td>5</td>
+									<td>24</td>
+									<td><span class="status-done">Done</span></td>
+								</tr>
+
+								<tr>
+									<td>6</td>
+									<td>6</td>
+									<td>24</td>
+									<td><span class="status-running">Running</span></td>
+								</tr>
+
+								<tr>
+									<td>7</td>
+									<td>7</td>
+									<td>24</td>
+									<td><span class="status-running">Running</span></td>
+								</tr>
+
+								<tr>
+									<td>8</td>
+									<td>8</td>
+									<td>24</td>
+									<td><span class="status-running">Running</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
