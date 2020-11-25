@@ -64,17 +64,17 @@ class TwitterBot():
 import os.path
 
 
-if __name__ == "__main__":
-    # username = click.prompt("Enter the number", type=str, default="anvien01111995@gmail.com")
-    # password = click.prompt("Enter the number", type=str, default="To01111995")
-
-    username = "viettel01111995@gmail.com"
-    password =  "To01111995"
-    t = TwitterBot(username, password)
-    t.signIn()
-
-    t.TweetSomething( 'hello @LamVna ')
-    # if os.path.isfile('C:/Users/Lam/Documents/TOVANLAM_MMO/Twitter_auto_tweet/test/test-pic.jpg'):
-    #     print("File exist")
-    # else:
-    #     print("File not exist")
+# if __name__ == "__main__":
+#     # username = click.prompt("Enter the number", type=str, default="anvien01111995@gmail.com")
+#     # password = click.prompt("Enter the number", type=str, default="To01111995")
+#
+#     username = "viettel01111995@gmail.com"
+#     password =  "To01111995"
+#     t = TwitterBot(username, password)
+#     t.signIn()
+#
+#     t.TweetSomething( 'hello @LamVna ')
+#     # if os.path.isfile('C:/Users/Lam/Documents/TOVANLAM_MMO/Twitter_auto_tweet/test/test-pic.jpg'):
+#     #     print("File exist")
+#     # else:
+#     #     print("File not exist")

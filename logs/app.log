@@ -1,21 +1,165 @@
-[2020-11-24 07:46:11.639] [ INFO    ] [_internal:_log:122] 15548  * Restarting with stat
-[2020-11-24 07:46:12.614] [ WARNING ] [_internal:_log:122] 5952  * Debugger is active!
-[2020-11-24 07:46:12.625] [ INFO    ] [_internal:_log:122] 5952  * Debugger PIN: 822-076-161
-[2020-11-24 07:46:12.634] [ INFO    ] [_internal:_log:122] 5952  * Running on http://0.0.0.0:3006/ (Press CTRL+C to quit)
-[2020-11-24 07:46:58.167] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:46:58] "GET / HTTP/1.1" 200 -
-[2020-11-24 07:46:58.200] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:46:58] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
-[2020-11-24 07:46:58.381] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:46:58] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
-[2020-11-24 07:46:58.514] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:46:58] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
-[2020-11-24 07:46:58.514] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:46:58] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
-[2020-11-24 07:46:58.953] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:46:58] "GET /swagger.json HTTP/1.1" 200 -
-[2020-11-24 07:46:58.962] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:46:58] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
-[2020-11-24 07:47:28.244] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:47:28] "GET /api/api_twitter HTTP/1.1" 200 -
-[2020-11-24 07:47:28.551] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:47:28] "GET /api/api_twitter HTTP/1.1" 200 -
-[2020-11-24 07:47:28.876] [ INFO    ] [_internal:_log:122] 5952 127.0.0.1 - - [24/Nov/2020 07:47:28] "GET /favicon.ico HTTP/1.1" 404 -
-[2020-11-24 07:50:08.974] [ INFO    ] [_internal:_log:122] 18172  * Restarting with stat
-[2020-11-24 07:50:09.949] [ WARNING ] [_internal:_log:122] 16948  * Debugger is active!
-[2020-11-24 07:50:09.955] [ INFO    ] [_internal:_log:122] 16948  * Debugger PIN: 822-076-161
-[2020-11-24 07:50:09.964] [ INFO    ] [_internal:_log:122] 16948  * Running on http://0.0.0.0:3006/ (Press CTRL+C to quit)
-[2020-11-24 07:50:12.482] [ INFO    ] [_internal:_log:122] 16948 127.0.0.1 - - [24/Nov/2020 07:50:12] "GET /api/api_twitter HTTP/1.1" 200 -
-[2020-11-24 07:50:12.508] [ INFO    ] [_internal:_log:122] 16948 127.0.0.1 - - [24/Nov/2020 07:50:12] "GET /static/jquery.min.js HTTP/1.1" 200 -
-[2020-11-24 07:50:12.722] [ INFO    ] [_internal:_log:122] 16948 127.0.0.1 - - [24/Nov/2020 07:50:12] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 04:32:51.347] [ INFO    ] [_internal:_log:122] 15968  * Restarting with stat
+[2020-11-25 04:32:54.127] [ WARNING ] [_internal:_log:122] 17312  * Debugger is active!
+[2020-11-25 04:32:54.143] [ INFO    ] [_internal:_log:122] 17312  * Debugger PIN: 822-076-161
+[2020-11-25 04:32:54.174] [ INFO    ] [_internal:_log:122] 17312  * Running on http://0.0.0.0:3006/ (Press CTRL+C to quit)
+[2020-11-25 04:33:40.680] [ INFO    ] [_internal:_log:122] 17312  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\app.py', reloading
+[2020-11-25 04:33:40.758] [ INFO    ] [_internal:_log:122] 15968  * Restarting with stat
+[2020-11-25 04:33:42.638] [ WARNING ] [_internal:_log:122] 10436  * Debugger is active!
+[2020-11-25 04:33:42.655] [ INFO    ] [_internal:_log:122] 10436  * Debugger PIN: 822-076-161
+[2020-11-25 04:33:42.671] [ INFO    ] [_internal:_log:122] 10436  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 04:33:44.727] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:44] "GET / HTTP/1.1" 200 -
+[2020-11-25 04:33:44.761] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:44] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+[2020-11-25 04:33:44.957] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:44] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+[2020-11-25 04:33:45.065] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:45] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+[2020-11-25 04:33:45.066] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:45] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+[2020-11-25 04:33:45.503] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:45] "GET /swagger.json HTTP/1.1" 200 -
+[2020-11-25 04:33:45.517] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:45] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+[2020-11-25 04:33:59.389] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:59] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 04:33:59.709] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:33:59] "GET /static/jquery.min.js HTTP/1.1" 200 -
+[2020-11-25 04:34:00.031] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:34:00] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 04:34:00.323] [ INFO    ] [_internal:_log:122] 10436 127.0.0.1 - - [25/Nov/2020 04:34:00] "GET /favicon.ico HTTP/1.1" 404 -
+[2020-11-25 04:56:15.343] [ INFO    ] [_internal:_log:122] 17136  * Restarting with stat
+[2020-11-25 04:56:17.161] [ WARNING ] [_internal:_log:122] 13760  * Debugger is active!
+[2020-11-25 04:56:17.171] [ INFO    ] [_internal:_log:122] 13760  * Debugger PIN: 822-076-161
+[2020-11-25 04:56:17.189] [ INFO    ] [_internal:_log:122] 13760  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 04:56:22.635] [ INFO    ] [_internal:_log:122] 13760 127.0.0.1 - - [25/Nov/2020 04:56:22] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 04:56:22.699] [ INFO    ] [_internal:_log:122] 13760 127.0.0.1 - - [25/Nov/2020 04:56:22] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 05:06:57.766] [ INFO    ] [_internal:_log:122] 17724  * Restarting with stat
+[2020-11-25 05:07:16.033] [ WARNING ] [_internal:_log:122] 17196  * Debugger is active!
+[2020-11-25 05:07:16.051] [ INFO    ] [_internal:_log:122] 17196  * Debugger PIN: 822-076-161
+[2020-11-25 05:07:16.065] [ INFO    ] [_internal:_log:122] 17196  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 05:13:12.263] [ INFO    ] [_internal:_log:122] 3324  * Restarting with stat
+[2020-11-25 05:13:30.468] [ WARNING ] [_internal:_log:122] 15824  * Debugger is active!
+[2020-11-25 05:13:30.478] [ INFO    ] [_internal:_log:122] 15824  * Debugger PIN: 822-076-161
+[2020-11-25 05:13:30.492] [ INFO    ] [_internal:_log:122] 15824  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 05:15:23.881] [ INFO    ] [_internal:_log:122] 4760  * Restarting with stat
+[2020-11-25 05:16:20.417] [ WARNING ] [_internal:_log:122] 15824  * Debugger is active!
+[2020-11-25 05:16:20.425] [ INFO    ] [_internal:_log:122] 15824  * Debugger PIN: 822-076-161
+[2020-11-25 05:16:20.436] [ INFO    ] [_internal:_log:122] 15824  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 05:16:38.880] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:38] "POST /api/api_twitter HTTP/1.1" 404 -
+[2020-11-25 05:16:44.937] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:44] "GET /api_twitter HTTP/1.1" 500 -
+[2020-11-25 05:16:44.962] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:44] "GET /api_twitter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-11-25 05:16:45.269] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:45] "GET /api_twitter?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-11-25 05:16:45.270] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:45] "GET /api_twitter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-11-25 05:16:45.679] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:45] "GET /api_twitter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-11-25 05:16:45.684] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:45] "GET /api_twitter?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-11-25 05:16:45.937] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:16:45] "GET /api_twitter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-11-25 05:17:03.239] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:17:03] "GET /api_twitter HTTP/1.1" 500 -
+[2020-11-25 05:17:03.542] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:17:03] "GET /api_twitter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-11-25 05:17:03.569] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:17:03] "GET /api_twitter?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-11-25 05:17:03.571] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:17:03] "GET /api_twitter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-11-25 05:17:03.937] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:17:03] "GET /api_twitter?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-11-25 05:17:03.939] [ INFO    ] [_internal:_log:122] 15824 127.0.0.1 - - [25/Nov/2020 05:17:03] "GET /api_twitter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-11-25 05:19:16.702] [ INFO    ] [_internal:_log:122] 15824  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\app.py', reloading
+[2020-11-25 05:19:16.805] [ INFO    ] [_internal:_log:122] 4760  * Restarting with stat
+[2020-11-25 06:19:12.501] [ INFO    ] [_internal:_log:122] 17724  * Restarting with stat
+[2020-11-25 06:19:13.654] [ WARNING ] [_internal:_log:122] 17732  * Debugger is active!
+[2020-11-25 06:19:13.654] [ INFO    ] [_internal:_log:122] 17732  * Debugger PIN: 822-076-161
+[2020-11-25 06:19:13.669] [ INFO    ] [_internal:_log:122] 17732  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 06:23:15.749] [ INFO    ] [_internal:_log:122] 15616  * Restarting with stat
+[2020-11-25 06:27:37.925] [ INFO    ] [_internal:_log:122] 9848  * Restarting with stat
+[2020-11-25 06:28:23.661] [ WARNING ] [_internal:_log:122] 13540  * Debugger is active!
+[2020-11-25 06:28:23.661] [ INFO    ] [_internal:_log:122] 13540  * Debugger PIN: 822-076-161
+[2020-11-25 06:28:23.676] [ INFO    ] [_internal:_log:122] 13540  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 06:28:59.788] [ INFO    ] [_internal:_log:122] 13540  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\app.py', reloading
+[2020-11-25 06:28:59.881] [ INFO    ] [_internal:_log:122] 9848  * Restarting with stat
+[2020-11-25 06:30:00.114] [ INFO    ] [_internal:_log:122] 14076  * Restarting with stat
+[2020-11-25 06:30:09.967] [ WARNING ] [_internal:_log:122] 17964  * Debugger is active!
+[2020-11-25 06:30:09.967] [ INFO    ] [_internal:_log:122] 17964  * Debugger PIN: 822-076-161
+[2020-11-25 06:30:09.989] [ INFO    ] [_internal:_log:122] 17964  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 06:30:43.454] [ INFO    ] [_internal:_log:122] 17964 127.0.0.1 - - [25/Nov/2020 06:30:43] "GET / HTTP/1.1" 200 -
+[2020-11-25 06:30:43.662] [ INFO    ] [_internal:_log:122] 17964 127.0.0.1 - - [25/Nov/2020 06:30:43] "GET /swagger.json HTTP/1.1" 200 -
+[2020-11-25 06:30:56.456] [ INFO    ] [_internal:_log:122] 17964 127.0.0.1 - - [25/Nov/2020 06:30:56] "GET /api_twitter HTTP/1.1" 200 -
+[2020-11-25 06:30:56.773] [ INFO    ] [_internal:_log:122] 17964 127.0.0.1 - - [25/Nov/2020 06:30:56] "GET /api_twitter HTTP/1.1" 200 -
+[2020-11-25 06:30:57.097] [ INFO    ] [_internal:_log:122] 17964 127.0.0.1 - - [25/Nov/2020 06:30:57] "GET /favicon.ico HTTP/1.1" 404 -
+[2020-11-25 06:31:12.851] [ INFO    ] [_internal:_log:122] 17964 127.0.0.1 - - [25/Nov/2020 06:31:12] "POST /api/api_twitter HTTP/1.1" 404 -
+[2020-11-25 06:31:35.066] [ INFO    ] [_internal:_log:122] 1708  * Restarting with stat
+[2020-11-25 06:31:36.223] [ WARNING ] [_internal:_log:122] 17572  * Debugger is active!
+[2020-11-25 06:31:36.223] [ INFO    ] [_internal:_log:122] 17572  * Debugger PIN: 822-076-161
+[2020-11-25 06:31:36.244] [ INFO    ] [_internal:_log:122] 17572  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 06:32:21.263] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:21] "GET /api_twitter HTTP/1.1" 404 -
+[2020-11-25 06:32:28.597] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:28] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 06:32:28.912] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:28] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 06:32:43.237] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:43] "POST /api/api_twitter HTTP/1.1" 500 -
+[2020-11-25 06:32:43.256] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:43] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-11-25 06:32:43.257] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:43] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-11-25 06:32:43.563] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:43] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-11-25 06:32:43.971] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:43] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-11-25 06:32:43.974] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:43] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-11-25 06:32:44.201] [ INFO    ] [_internal:_log:122] 17572 127.0.0.1 - - [25/Nov/2020 06:32:44] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-11-25 06:34:03.883] [ INFO    ] [_internal:_log:122] 15412  * Restarting with stat
+[2020-11-25 06:34:30.646] [ WARNING ] [_internal:_log:122] 12796  * Debugger is active!
+[2020-11-25 06:34:30.646] [ INFO    ] [_internal:_log:122] 12796  * Debugger PIN: 822-076-161
+[2020-11-25 06:34:30.661] [ INFO    ] [_internal:_log:122] 12796  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 06:39:28.865] [ INFO    ] [_internal:_log:122] 1516  * Restarting with stat
+[2020-11-25 06:39:52.794] [ WARNING ] [_internal:_log:122] 17160  * Debugger is active!
+[2020-11-25 06:39:52.794] [ INFO    ] [_internal:_log:122] 17160  * Debugger PIN: 822-076-161
+[2020-11-25 06:39:52.809] [ INFO    ] [_internal:_log:122] 17160  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 06:41:09.302] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:41:09] "GET / HTTP/1.1" 200 -
+[2020-11-25 06:41:09.450] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:41:09] "GET /swagger.json HTTP/1.1" 200 -
+[2020-11-25 06:41:20.339] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:41:20] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 06:41:20.656] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:41:20] "GET /api/api_twitter HTTP/1.1" 200 -
+[2020-11-25 06:42:14.763] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:42:14] "POST /api/api_twitter HTTP/1.1" 500 -
+[2020-11-25 06:42:14.782] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:42:14] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2020-11-25 06:42:14.782] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:42:14] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2020-11-25 06:42:15.088] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:42:15] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2020-11-25 06:42:15.435] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:42:15] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2020-11-25 06:42:16.088] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:42:16] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-11-25 06:42:16.429] [ INFO    ] [_internal:_log:122] 17160 127.0.0.1 - - [25/Nov/2020 06:42:16] "GET /api/api_twitter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2020-11-25 06:42:35.323] [ INFO    ] [_internal:_log:122] 17160  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\app.py', reloading
+[2020-11-25 06:42:35.401] [ INFO    ] [_internal:_log:122] 1516  * Restarting with stat
+[2020-11-25 07:00:45.705] [ INFO    ] [_internal:_log:122] 12372  * Restarting with stat
+[2020-11-25 07:00:46.825] [ WARNING ] [_internal:_log:122] 17024  * Debugger is active!
+[2020-11-25 07:00:46.843] [ INFO    ] [_internal:_log:122] 17024  * Debugger PIN: 822-076-161
+[2020-11-25 07:00:46.846] [ INFO    ] [_internal:_log:122] 17024  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:01:54.612] [ INFO    ] [_internal:_log:122] 17024  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\app.py', reloading
+[2020-11-25 07:01:54.690] [ INFO    ] [_internal:_log:122] 12372  * Restarting with stat
+[2020-11-25 07:01:55.713] [ WARNING ] [_internal:_log:122] 2600  * Debugger is active!
+[2020-11-25 07:01:55.713] [ INFO    ] [_internal:_log:122] 2600  * Debugger PIN: 822-076-161
+[2020-11-25 07:01:55.730] [ INFO    ] [_internal:_log:122] 2600  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:02:29.582] [ INFO    ] [_internal:_log:122] 16064  * Restarting with stat
+[2020-11-25 07:02:30.680] [ WARNING ] [_internal:_log:122] 16532  * Debugger is active!
+[2020-11-25 07:02:30.687] [ INFO    ] [_internal:_log:122] 16532  * Debugger PIN: 822-076-161
+[2020-11-25 07:02:30.694] [ INFO    ] [_internal:_log:122] 16532  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:03:12.146] [ INFO    ] [_internal:_log:122] 12108  * Restarting with stat
+[2020-11-25 07:03:13.244] [ WARNING ] [_internal:_log:122] 4084  * Debugger is active!
+[2020-11-25 07:03:13.252] [ INFO    ] [_internal:_log:122] 4084  * Debugger PIN: 822-076-161
+[2020-11-25 07:03:13.261] [ INFO    ] [_internal:_log:122] 4084  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:04:17.502] [ INFO    ] [_internal:_log:122] 4084  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\app.py', reloading
+[2020-11-25 07:04:17.564] [ INFO    ] [_internal:_log:122] 12108  * Restarting with stat
+[2020-11-25 07:04:18.697] [ WARNING ] [_internal:_log:122] 4356  * Debugger is active!
+[2020-11-25 07:04:18.712] [ INFO    ] [_internal:_log:122] 4356  * Debugger PIN: 822-076-161
+[2020-11-25 07:04:18.712] [ INFO    ] [_internal:_log:122] 4356  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:04:20.732] [ INFO    ] [_internal:_log:122] 2876  * Restarting with stat
+[2020-11-25 07:04:21.728] [ WARNING ] [_internal:_log:122] 844  * Debugger is active!
+[2020-11-25 07:04:21.728] [ INFO    ] [_internal:_log:122] 844  * Debugger PIN: 822-076-161
+[2020-11-25 07:04:21.744] [ INFO    ] [_internal:_log:122] 844  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:04:29.676] [ INFO    ] [_internal:_log:122] 17072  * Restarting with stat
+[2020-11-25 07:04:30.608] [ WARNING ] [_internal:_log:122] 11868  * Debugger is active!
+[2020-11-25 07:04:30.623] [ INFO    ] [_internal:_log:122] 11868  * Debugger PIN: 822-076-161
+[2020-11-25 07:04:30.623] [ INFO    ] [_internal:_log:122] 11868  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:06:56.105] [ INFO    ] [_internal:_log:122] 11868  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\config\\conf.py', reloading
+[2020-11-25 07:06:56.167] [ INFO    ] [_internal:_log:122] 17072  * Restarting with stat
+[2020-11-25 07:06:57.131] [ WARNING ] [_internal:_log:122] 17764  * Debugger is active!
+[2020-11-25 07:06:57.131] [ INFO    ] [_internal:_log:122] 17764  * Debugger PIN: 822-076-161
+[2020-11-25 07:06:57.147] [ INFO    ] [_internal:_log:122] 17764  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:45:23.205] [ INFO    ] [_internal:_log:122] 17764  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\utils\\twitterbot.py', reloading
+[2020-11-25 07:45:23.267] [ INFO    ] [_internal:_log:122] 17072  * Restarting with stat
+[2020-11-25 07:45:24.298] [ WARNING ] [_internal:_log:122] 17308  * Debugger is active!
+[2020-11-25 07:45:24.304] [ INFO    ] [_internal:_log:122] 17308  * Debugger PIN: 822-076-161
+[2020-11-25 07:45:24.313] [ INFO    ] [_internal:_log:122] 17308  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:45:40.136] [ INFO    ] [_internal:_log:122] 17308  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\utils\\twitterbot.py', reloading
+[2020-11-25 07:45:40.203] [ INFO    ] [_internal:_log:122] 17072  * Restarting with stat
+[2020-11-25 07:45:41.281] [ WARNING ] [_internal:_log:122] 5616  * Debugger is active!
+[2020-11-25 07:45:41.287] [ INFO    ] [_internal:_log:122] 5616  * Debugger PIN: 822-076-161
+[2020-11-25 07:45:41.297] [ INFO    ] [_internal:_log:122] 5616  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:46:05.986] [ INFO    ] [_internal:_log:122] 5616  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\utils\\twitterbot.py', reloading
+[2020-11-25 07:46:06.047] [ INFO    ] [_internal:_log:122] 17072  * Restarting with stat
+[2020-11-25 07:46:07.119] [ WARNING ] [_internal:_log:122] 14980  * Debugger is active!
+[2020-11-25 07:46:07.126] [ INFO    ] [_internal:_log:122] 14980  * Debugger PIN: 822-076-161
+[2020-11-25 07:46:07.136] [ INFO    ] [_internal:_log:122] 14980  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
+[2020-11-25 07:46:25.079] [ INFO    ] [_internal:_log:122] 14980  * Detected change in 'C:\\Users\\Lam\\Documents\\TOVANLAM_MMO\\Twitter_auto_tweet\\utils\\twitterbot.py', reloading
+[2020-11-25 07:46:25.144] [ INFO    ] [_internal:_log:122] 17072  * Restarting with stat
+[2020-11-25 07:46:26.158] [ WARNING ] [_internal:_log:122] 17852  * Debugger is active!
+[2020-11-25 07:46:26.164] [ INFO    ] [_internal:_log:122] 17852  * Debugger PIN: 822-076-161
+[2020-11-25 07:46:26.173] [ INFO    ] [_internal:_log:122] 17852  * Running on http://0.0.0.0:5009/ (Press CTRL+C to quit)
