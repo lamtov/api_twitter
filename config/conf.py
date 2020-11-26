@@ -22,7 +22,7 @@ list_twitter_bot_users=[
 file_list_twitter_bot = open(os.path.dirname(sys.modules['__main__'].__file__)+'/config/'+'list_bot_user_twitter.txt', encoding="utf8")
 for line in file_list_twitter_bot.readlines():
     # line=line.lower()
-    list_twitter_bot_users.append({'user_name':line.split(':')[0], 'password':line.split(':')[1].replace('\n', '')})
+    list_twitter_bot_users.append({'username':line.split(':')[0], 'password':line.split(':')[1].replace('\n', '')})
 class Config:
     """Set Flask configuration vars from .env file."""
 

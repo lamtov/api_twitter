@@ -21,7 +21,8 @@ def init_driver():
     # chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument("--incognito")
     chrome_options.add_argument("--window-size=1920x1080")
-    driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="C:/Users/Lam/Documents/Selenium/chromedriver_win32/chromedriver.exe")
+    # driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="C:/Users/Lam/Documents/Selenium/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="C:/Users/etoxlam/Documents/python_project/chromedriver.exe")
     return driver
 
 class TwitterBot():
@@ -68,7 +69,7 @@ class TwitterBot():
                                                               /div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div
                                                               /div/div/div/div/div/div/div/div[1]/div/div/div/div[2]/div
                                                               /div/div/div''')
-                tweet.send_keys(str("HELLO WORLD") )
+                tweet.send_keys(str("HELLO WORLD") + '\n'+str(get_random_string(8)))
                 tweet.send_keys(Keys.COMMAND, Keys.ENTER)
                 submit = self.browser.find_element_by_xpath(
                     '''//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[4]/div/div/div[2]/div[3]''')
@@ -98,6 +99,7 @@ class TwitterBot():
                 self.time_block=(datetime.datetime.now() - self.start_block).total_seconds()
                 # time.sleep(60)
     def TweetSomething(self, message,image):
+        message = message + '\n'+str(get_random_string(8))
         if self.status != 'LOGIN_FAILED':
             try:
                 self.status='twitt'
@@ -156,7 +158,7 @@ if __name__ == "__main__":
     # username = click.prompt("Enter the number", type=str, default="anvien01111995@gmail.com")
     # password = click.prompt("Enter the number", type=str, default="To01111995")
 
-    username = "lane287279067"
+    username = "anvien01111995@gmail.com"
     password =  "To01111995"
     t = TwitterBot(username, password)
     t.signIn()
