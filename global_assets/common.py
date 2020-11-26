@@ -1,11 +1,19 @@
 
 from datetime import  datetime
-import  models
 import os, sys
 import json
 ROOT_DIR = os.path.dirname(sys.modules['__main__'].__file__)
 import numpy as np
 import os
+
+import random
+import string
+
+def get_random_string(length):
+    letters = string.ascii_lowercase
+    result_str = ''.join(random.choice(letters) for i in range(length))
+    return result_str
+
 def invert_dict(my_dict):
 	return dict(map(reversed, my_dict.items()))
 	#{"red":"do", "blue":"xanh", "yellow":"vang"} ---> {"do":"red", "xanh":"blue", "vang":"yellow"}

@@ -36,48 +36,45 @@ center_socketio.init_app(app)
 HOST = '0.0.0.0'  # The server's hostname or IP address
 PORT = 5009       # The port used by the server
 executor = ThreadPoolExecutor(1)
-list_twitter_bot_users= config.list_twitter_bot_users
-print(list_twitter_bot_users)
-print(list_twitter_bot_users)
-list_twitter_bot=[]
-
-def signin_twitter_bot(twitter_bot):
-    twitter_bot.signIn()
-def init_twitter_bot(number_threads):
-    #init with number thread and test status of twitter
-    global list_twitter_bot
-    list_twitter_bot=[]
-    for bot_user in list_twitter_bot_users:
-        user_name = bot_user['user_name']
-        password = bot_user['password']
-        exec = ThreadPoolExecutor(1)
-        t = TwitterBot(user_name, password)
-        list_twitter_bot.append(t)
-        exec.submit(signin_twitter_bot,t)
-
-
-
-
-
-
-
-
-
-
-
+# list_twitter_bot_users= config.list_twitter_bot_users
+# print(list_twitter_bot_users)
+#
+# list_twitter_bot=[]
+#
+# def init_twitter_bot(number_threads):
+#     #init with number thread and test status of twitter
+#     global list_twitter_bot
+#     list_twitter_bot=[]
+#     for bot_user in list_twitter_bot_users:
+#         user_name = bot_user['user_name']
+#         password = bot_user['password']
+#         t = TwitterBot(user_name, password)
+#         list_twitter_bot.append(t)
 
 @app.route('/index', methods=['GET', 'POST'])
 def api():
     if flask.request.method == 'POST':
         file_user_data = request.files['file_user_data']
+        path_file_user_data=os.path.dirname(sys.modules['__main__'].__file__) + 'file_user_data.txt'
         file_picture = request.files['file_picture']
-        file_picture_dir=os.path.dirname(sys.modules['__main__'].__file__)+'picture.jpg'
-        file_picture.save(file_picture_dir)
+        path_file_picture=os.path.dirname(sys.modules['__main__'].__file__)+'picture.jpg'
+
         file_proxy = request.files['file_proxy']
+        path_file_proxy=os.path.dirname(sys.modules['__main__'].__file__)+'file_proxy.txt'
+
+        file_user_data.save(path_file_user_data)
+        file_picture.save(path_file_picture)
+        file_proxy.save(path_file_proxy)
+
         number_threads = request.form['number_threads']
         spam_message = request.form['spam_message']
-        # list_twitter_bot[0].TweetSomething('hello @LamVna', file_picture_dir)
-        # flash("START ")
+
+        list_user_data=open(path_file_user_data, encoding="utf8").readlines()
+        list_proxy=open(path_file_proxy, encoding="utf8").readlines()
+        list_twitter_bot_users = config.list_twitter_bot_users
+
+
+
 
         return Response(render_template('index.html'), 200,
                         mimetype='text/html')
@@ -126,8 +123,8 @@ def api_twitter():
 
 
 if __name__ == "__main__":
-
-    executor.submit(init_twitter_bot)
+    #
+    # executor.submit(init_twitter_bot)
     app.logger.addHandler(logging.handlers)
     # app.run(debug=True,host=HOST, port=PORT)
     center_socketio.run(app, host="0.0.0.0", port=5009, debug=True, log_output=True), ()
