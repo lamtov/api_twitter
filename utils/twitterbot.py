@@ -2,11 +2,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-import click
 import traceback
 from global_assets.common import get_random_string
 import datetime
-from selenium.webdriver.common.proxy import Proxy, ProxyType
 
 def init_driver_ubuntu():
     chrome_options = Options()

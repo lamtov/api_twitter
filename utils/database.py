@@ -1,16 +1,5 @@
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-import click
-import traceback
-import random
-import string
-from utils.twitterbot import TwitterBot
-from global_assets.common import get_random_string
 import datetime
 from utils.twitterbot import TwitterBot
-from utils.spam_thread import SpamThread
 import os
 from threading import Lock
 
@@ -19,24 +8,25 @@ class Dir():
     def __init__(self, data_dir):
         try:
             data_dir = data_dir.replace('\\', '/')
-            self.data_user_spam=data_dir + '/' + 'user_spam.txt'
-            self.name=data_dir.split('/')[-1]
+            self.data_user_spam = data_dir + '/' + 'user_spam.txt'
+            self.name = data_dir.split('/')[-1]
             self.status = 'init'
             self.target_index = 0
             self.number_post = 0
-            self.num_target_spam=0
+            self.num_target_spam = 0
             self.message = str(open(data_dir + '/' + 'content.txt', encoding="utf8").read())
             self._list_user_data = open(data_dir + '/' + 'data.txt', encoding="utf8").readlines()[:]
             self.file_picture = data_dir + '/' + 'mockup.jpg'
         except Exception as e:
             self.target_index = 0
             self.number_post = 0
-            self.num_target_spam=0
+            self.num_target_spam = 0
             self.status = str('ERROR')
-    def write_user_spam(self,_list_tagged):
-        with open(self.data_user_spam , 'a',encoding="utf8") as filehandle:
+
+    def write_user_spam(self, _list_tagged):
+        with open(self.data_user_spam, 'a', encoding="utf8") as filehandle:
             for username in _list_tagged:
-                filehandle.write(username+'\n')
+                filehandle.write(username + '\n')
 
 
 class DataBase():
@@ -74,9 +64,9 @@ class DataBase():
                     bot.status = 'OK'
                     return bot
             for bot in self.list_bot:
-                if bot.status == 'BLOCKING'  :
+                if bot.status == 'BLOCKING':
                     if bot.start_block is None:
-                        bot.start_block=datetime.datetime.now()
+                        bot.start_block = datetime.datetime.now()
                     time_block = (datetime.datetime.now() - bot.start_block).total_seconds()
                     if time_block > 1800:
                         bot.start_block = datetime.datetime.now()
@@ -89,12 +79,12 @@ class DataBase():
     def get_next_proxy(self):
         self.lock_3.acquire()
         try:
-            if len(self.list_proxy) ==0:
-                return  None
+            if len(self.list_proxy) == 0:
+                return None
 
-            proxy=self.list_proxy[0]
+            proxy = self.list_proxy[0]
             self.list_proxy.pop(0)
-            return  proxy
+            return proxy
         finally:
             self.lock_3.release()
         return None

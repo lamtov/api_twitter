@@ -1,32 +1,17 @@
-import importlib, os, sys, time, base64, traceback, json, _thread
-from time import sleep
-from datetime import datetime
-import numpy as np
-from multiprocessing import Process, Manager
 from engineio.payload import Payload
-from flask_socketio import SocketIO
-from flask_restplus import Api, Resource, fields
-import logging.config
+
 import config
-from flask import session
-from flask_socketio import emit, join_room, leave_room
-import base64
-import json
-# from elasticsearch import Elasticsearch
-import numpy as np
-import pandas as pd
-from pandas import ExcelWriter
+
 from concurrent.futures import ThreadPoolExecutor
-from utils.twitterbot import TwitterBot
+
 from utils.spam_thread import SpamThread
 from utils.database import DataBase
 import flask
 from flask_restplus import Api, Resource, Namespace
-from flask import Blueprint, abort, request, redirect, url_for, Flask, render_template
+
 from flask import Response
 from flask import flash, request, redirect, render_template
 from flask_socketio import SocketIO
-import os
 
 log_config_dir = 'config/logging.conf'
 # logging.config.fileConfig(log_config_dir, disable_existing_loggers=False)
@@ -50,7 +35,8 @@ def do_thread(spam_thread):
 list_twitter_bot_users = [
 
 ]
-database=None
+database = None
+
 
 @app.route('/index', methods=['GET', 'POST'])
 def api():
@@ -95,17 +81,17 @@ def get_spam_infos():
         if database is None:
             return spam_infos
 
-        list_bots=database.list_bot
-        list_dir=database.list_dirs
+        list_bots = database.list_bot
+        list_dir = database.list_dirs
         for bot in list_bots:
-            if bot.status=='init':
+            if bot.status == 'init':
                 spam_infos['number_users_spam'] = spam_infos['number_users_spam'] + 1
             if bot.status == 'LOGIN_FAILED':
                 spam_infos['number_signin_failse'] = spam_infos['number_signin_failse'] + 1
             if bot.status == 'BLOCKING':
                 spam_infos['number_locked_spam'] = spam_infos['number_locked_spam'] + 1
         for dir in list_dir:
-            spam_infos['number_posts_spam']=spam_infos['number_posts_spam']+dir.number_post
+            spam_infos['number_posts_spam'] = spam_infos['number_posts_spam'] + dir.number_post
         return spam_infos
 
 
@@ -116,7 +102,7 @@ def get_dir_infos():
     else:
         global spam_infos
 
-        spam_infos = { 'name':[],'num_post_': [], 'num_target_spam_': [],
+        spam_infos = {'name': [], 'num_post_': [], 'num_target_spam_': [],
                       'status_': [], 'number_dir': 0}
         if database is None:
             return spam_infos

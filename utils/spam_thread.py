@@ -1,15 +1,5 @@
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
-import click
 import traceback
-import random
-import string
-from utils.twitterbot import  TwitterBot
-from global_assets.common import get_random_string
-import datetime
-
 class SpamThread():
     def __init__(self, database):
         try:
