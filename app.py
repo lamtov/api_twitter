@@ -1,4 +1,4 @@
-from engineio.payload import Payload
+# from engineio.payload import Payload
 
 import config
 
@@ -11,16 +11,16 @@ from flask_restplus import Api, Resource, Namespace
 
 from flask import Response
 from flask import flash, request, redirect, render_template
-from flask_socketio import SocketIO
+# from flask_socketio import SocketIO
 
 log_config_dir = 'config/logging.conf'
 # logging.config.fileConfig(log_config_dir, disable_existing_loggers=False)
-Payload.max_decode_packets = 500
+# Payload.max_decode_packets = 500
 app = flask.Flask(__name__)
 api = Api(app)
 app.config.from_object(config.Config)
-center_socketio = SocketIO()
-center_socketio.init_app(app)
+# center_socketio = SocketIO()
+# center_socketio.init_app(app)
 HOST = '0.0.0.0'  # The server's hostname or IP address
 PORT = 5009  # The port used by the server
 
