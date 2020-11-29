@@ -8,6 +8,8 @@ from global_assets.common import get_random_string
 import datetime
 from selenium.webdriver.common.proxy import Proxy, ProxyType
 
+
+
 def init_driver_ubuntu():
     chrome_options = Options()
     chrome_options.add_argument('--headless')
@@ -18,22 +20,29 @@ def init_driver_ubuntu():
     return driver
 
 
-def init_driver(_proxy):
+def init_driver_proxy():
     chrome_options = Options()
-    if _proxy is not None:
+    # proxy = Proxy()
+    # proxy.proxyType = ProxyType.MANUAL
+    # proxy.autodetect = True
+    # proxy.httpProxy = proxy.sslProxy = proxy.socksProxy = "65.62.63.64:9000"
+    PROXY="157.65.25.144:3128"
+    chrome_options.add_argument('--proxy-server=%s' % PROXY)
 
-        # PROXY ="157.65.25.144:3128"
-        PROXY=_proxy.replace('\n','')
-        print(PROXY)
-        chrome_options.add_argument('--proxy-server=%s' % PROXY)
+    print("XXXX")
     # chrome_options.add_argument("ignore-certificate-errors")
+
+
+
     # chrome_options.add_argument('--headless')
     # chrome_options.add_argument('--no-sandbox')
     # chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument("--incognito")
     chrome_options.add_argument("--window-size=1920x1080")
+
     driver = webdriver.Chrome(chrome_options=chrome_options,
-                              executable_path="C:/Selenium/chromedriver_win32/chromedriver.exe")
+                              executable_path="C:/Users/Lam/Documents/Selenium/chromedriver_win32/chromedriver.exe")
+    # driver = webdriver.Chrome(chrome_options=chrome_options, executable_path="C:/Users/etoxlam/Documents/python_project/chromedriver.exe")
     return driver
 
 
@@ -50,33 +59,24 @@ class TwitterBot():
         except Exception as e:
             self.status = str(traceback.format_exc())
 
-    def signIn(self, proxy):
-        try:
-            try:
-                self.browser = init_driver(proxy)
-                self.browser.get("https://www.twitter.com/login")
-                time.sleep(5)
-                usernameInput = self.browser.find_element_by_name("session[username_or_email]")
-                self.status=str('PROXY_OK')
-                # self.browser.close()
-            except:
-                self.status=str('PROXY_FAILED')
-                self.browser.close()
-            if self.status==str('PROXY_OK'):
-                self.browser.get("https://www.twitter.com/login")
-                time.sleep(5)
-                usernameInput = self.browser.find_element_by_name("session[username_or_email]")
-                passwordInput = self.browser.find_element_by_name("session[password]")
-                usernameInput.send_keys(self.username)
-                passwordInput.send_keys(self.password)
-                passwordInput.send_keys(Keys.ENTER)
-                time.sleep(2)
+    def signIn(self):
+        self.browser = init_driver_proxy()
+        self.browser.get("https://www.google.com/")
 
-                photo_xpath = '/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div[1]/input'
-                self.browser.find_element_by_xpath(photo_xpath)
-                self.status = 'OK'
-        except Exception as e:
-            self.status = str('LOGIN_FAILED')
+        self.browser.get("https://www.twitter.com/login")
+        time.sleep(5)
+        usernameInput = self.browser.find_element_by_name("session[username_or_email]")
+        passwordInput = self.browser.find_element_by_name("session[password]")
+        usernameInput.send_keys(self.username)
+        passwordInput.send_keys(self.password)
+        passwordInput.send_keys(Keys.ENTER)
+        time.sleep(2)
+
+        photo_xpath = '/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[2]/div/div/div[1]/input'
+        self.browser.find_element_by_xpath(photo_xpath)
+        self.status = 'OK'
+
+
 
     def check_block(self):
         if self.status != 'LOGIN_FAILED':
@@ -118,10 +118,8 @@ class TwitterBot():
 
     def TweetSomething(self, message, list_mention, image, list_tags):
         number_tag_and_mention=len(list_mention)+len(list_tags)
-        list_tagged=[]
         for target in list_mention:
             message = message + ' @' + target + ' '
-            list_tagged.append(target)
 
         message = message + '\n' + str(get_random_string(8))
         if self.status != 'LOGIN_FAILED':
@@ -142,18 +140,17 @@ class TwitterBot():
 
                         tag_element = self.browser.find_element_by_xpath(image_tag_path)
                         tag_element.click()
-                        time.sleep(1)
+                        time.sleep(0.05)
                         for name in list_tags:
                             try:
                                 search_input = self.browser.find_element_by_xpath(
                                     '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div/div/form/div[1]/div/div/div[2]/input')
                                 search_input.send_keys('@' + str(name))
-                                time.sleep(1)
+                                time.sleep(2)
                                 people = self.browser.find_element_by_xpath(
                                     '/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div/div/form/div[2]/div/div[2]/div/li/div/div[2]/div/div/div/div[2]/div/span')
                                 people.click()
-                                time.sleep(1)
-                                list_tagged.append(name)
+                                time.sleep(2)
                             except:
                                 number_tag_and_mention=number_tag_and_mention-1
                                 try:
@@ -196,7 +193,7 @@ class TwitterBot():
             except Exception as e:
                 self.status = 'BLOCKING'
                 return 0
-        return list_tagged
+        return number_tag_and_mention
     def close(self):
         self.browser.close()
 
@@ -219,7 +216,7 @@ if __name__ == "__main__":
     t = TwitterBot(username, password)
     t.signIn()
 
-    t.TweetSomething('hello', 'C:/Users/Lam/Pictures/BnS/032.jpg')
+    t.TweetSomething('hello', list_target,'C:/Users/Lam/Pictures/BnS/032.jpg',list_target)
 
     # for i in range(1,2):
     #     time.sleep(1)

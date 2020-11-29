@@ -30,13 +30,7 @@
 
         var socket;
         $(document).ready(function () {
-            {#socket_spam_infos = io.connect('http://' + document.domain + ':' + location.port + '/spam_infos');#}
-            {#socket_spam_infos.on('update_spam_infos', function (data) {#}
-            {#	$("#number_users_spam").text(data['number_users_spam']);#}
-            {#	$("#number_posts_spam").text(data['number_posts_spam']);#}
-            {#	$("#number_locked_spam").text(data['number_locked_spam']);#}
-            {#	console.log(data)#}
-            var doSth = function () {
+            var do_get_spam_info = function () {
                 $.ajax({
                     type: "GET",
                     url: '/get_spam_infos',
@@ -44,10 +38,37 @@
                         $("#number_users_spam").text(data['number_users_spam']);
                         $("#number_posts_spam").text(data['number_posts_spam']);
                         $("#number_locked_spam").text(data['number_locked_spam']);
+                        $("#number_signin_failse").text(data['number_signin_failse']);
                     }
                 });
             };
-            setInterval(doSth, 1000);
+
+            var do_get_thread_info = function () {
+                $.ajax({
+                    type: "GET",
+                    url: '/get_dir_infos',
+                    success: function (data) {
+                        var idx;
+                        for (idx = 1; idx <= data['number_dir']; idx++) {
+                            $("#"+'name'+idx ).text(data['name'][idx-1]);
+                            $("#"+'num_post_'+idx ).text(data['num_post_'][idx-1]);
+                            $("#"+'num_target_spam_'+idx ).text(data['num_target_spam_'][idx-1]);
+                            $("#"+'status_'+idx ).text(data['status_'][idx-1]);
+                            if (data['status_'][idx-1]=='RUNNING') {
+                                $("#" + 'status_' + idx).attr('class', 'status-running');
+                            } else if (data['status_'][idx-1]=='DONE'){
+                                $("#"+'status_'+idx ).attr('class', 'status-done');
+                            } else {
+                                $("#"+'status_'+idx ).attr('class', 'status-error');
+                            }
+
+                        }
+
+                    }
+                });
+            };
+            setInterval(do_get_spam_info, 1000);
+            setInterval(do_get_thread_info, 1000);
 
 
         });
@@ -78,7 +99,7 @@
             <div class="statis statis-success">
                 <div class="statis-title">Users spam</div>
                 <div class="statis-counter">
-                    <span id="number_users_spam">12</span>
+                    <span id="number_users_spam">0</span>
                 </div>
             </div>
         </div>
@@ -87,7 +108,7 @@
             <div class="statis">
                 <div class="statis-title">Posts</div>
                 <div class="statis-counter">
-                    <span id="number_posts_spam">12</span>
+                    <span id="number_posts_spam">0</span>
                 </div>
             </div>
         </div>
@@ -96,7 +117,15 @@
             <div class="statis statis-danger">
                 <div class="statis-title">Locked</div>
                 <div class="statis-counter">
-                    <span id="number_locked_spam">12</span>
+                    <span id="number_locked_spam">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="statis statis-danger">
+                <div class="statis-title">Signin Failse</div>
+                <div class="statis-counter">
+                    <span id="number_signin_failse">0</span>
                 </div>
             </div>
         </div>
@@ -107,19 +136,12 @@
             <div class="col-3">
                 <form method="post" action="/index" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="file_user_data">Twitter users</label>
-                        <input type="file" name="file_user_data" class="form-control" placeholder="Enter path file">
+                        <label for="file_user_twitter">Twitter users</label>
+                        <input type="text" name="file_user_twitter" class="form-control" placeholder="Enter path file" value='C:\Users\Lam\Documents\TOVANLAM_MMO\Twitter_auto_tweet\test\file_user_twitter\nick.txt'>
                     </div>
                     <div class="form-group">
-                        <label for="spam_message">Spam Message</label>
-                        <input type="text" name="spam_message" class="form-control"
-                               placeholder="Enter Spam Message Here">
-                    </div>
-                    <div class="form-group">
-                        <label for="file_picture">file_picture</label>
-                        <input type="file" name="file_picture" class="form-control" accept="image/*" autocomplete="off"
-                               onchange="readURL(this);" required>
-                        <img id="blah" src="#" alt="your image"/>
+                        <label for="file_user_data">Duong Dan Data</label>
+                        <input type="text" name="file_user_data" class="form-control" placeholder="Enter path file" value="C:\Users\Lam\Documents\TOVANLAM_MMO\Twitter_auto_tweet\test\file_user_data\spam">
                     </div>
                     <div class="form-group">
                         <label for="number_threads">So Luong Thread</label>
@@ -127,9 +149,9 @@
                                required>
                     </div>
                     <div class="form-group">
-                        <label for="file_proxy">Proxy</label>
-                        <input type="file" name="file_proxy" class="form-control" autocomplete="off"
-                               placeholder="Enter path file" required>
+                        <label for="file_proxy">Duong Dan Proxy</label>
+                        <input type="text" name="file_proxy" class="form-control" autocomplete="off"
+                               placeholder="Enter path file"  value="C:\Users\Lam\Documents\TOVANLAM_MMO\Twitter_auto_tweet\test\file_proxy\proxy.txt"  required>
                     </div>
 
                     <div class="btn-group" style="width: 100%; margin-top: 50px;">
@@ -147,69 +169,25 @@
                     <table class="table table-bordered table-striped">
                         <thead>
                         <tr>
-                            <th></th>
-                            <th>Data</th>
-                            <th>Users Spam</th>
+                            <th>STT</th>
+                            <th>Folder</th>
+                            <th>Number Post</th>
+                            <th>User Spams</th>
                             <th>Status</th>
                         </tr>
                         </thead>
 
                         <tbody>
+                        {%  for idx in list_folders %}
                         <tr>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>24</td>
-                            <td><span class="status-running">Running</span></td>
+                            <td id="{{ idx }}">{{ idx }}</td>
+                            <td id="{{ 'name'+idx  }}">0</td>
+                            <td id="{{ 'num_post_'+idx }}">0</td>
+                            <td id="{{ 'num_target_spam_'+idx }}">0</td>
+                            <td id="{{ 'status_'+idx }}"><span class="status-running">Running</span></td>
                         </tr>
+                        {%  endfor %}
 
-                        <tr>
-                            <td>2</td>
-                            <td>2</td>
-                            <td>24</td>
-                            <td><span class="status-running">Running</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>3</td>
-                            <td>3</td>
-                            <td>24</td>
-                            <td><span class="status-error">Error</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>4</td>
-                            <td>4</td>
-                            <td>24</td>
-                            <td><span class="status-error">Error</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>5</td>
-                            <td>5</td>
-                            <td>24</td>
-                            <td><span class="status-done">Done</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>6</td>
-                            <td>6</td>
-                            <td>24</td>
-                            <td><span class="status-running">Running</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>7</td>
-                            <td>7</td>
-                            <td>24</td>
-                            <td><span class="status-running">Running</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>24</td>
-                            <td><span class="status-running">Running</span></td>
-                        </tr>
                         </tbody>
                     </table>
                 </div>
