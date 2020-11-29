@@ -36,7 +36,7 @@ list_twitter_bot_users = [
 
 ]
 database = None
-
+stop_running="RUNNING"
 
 @app.route('/index', methods=['GET', 'POST'])
 def api():
@@ -117,6 +117,30 @@ def get_dir_infos():
 
         # center_socketio.emit('update_spam_infos', spam_infos, broadcast=True, namespace='/spam_infos')
         return spam_infos
+
+
+
+@app.route('/stop_resume', methods=['POST'])
+def stop_resume():
+    if flask.request.method == 'POST':
+        global database
+        global stop_running
+        if database is None:
+            return {'message':"No Thread Running",'flag':'IDLE'}
+        else:
+            if stop_running=='STOP':
+                stop_running='RUNNING'
+                for spam_thread in list_spam_threads:
+                    spam_thread.STOP=False
+                return {'message': "RESUME ALL THREADS",'flag':'RUNNING'}
+            else:
+                stop_running='STOP'
+                for spam_thread in list_spam_threads:
+                    spam_thread.STOP=True
+                return {'message':"STOP ALL THREADS",'flag':'STOP'}
+    else:
+        return {'ok':'ok'}
+
 
 
 #

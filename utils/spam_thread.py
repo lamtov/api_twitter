@@ -11,7 +11,7 @@ class SpamThread():
             self.spam_message =None
             self.spam_picture = None
             self.running_bot=None
-
+            self.STOP =False
         except Exception as e:
             self.status=str(traceback.format_exc())
 
@@ -55,29 +55,36 @@ class SpamThread():
         # self.dir.target_index =0
             self.dir.status='RUNNING'
             while self.dir.target_index < len(self.list_target):
-                targets=self.list_target[self.dir.target_index:self.dir.target_index+24]
-                _list_mention=targets[0:14]
-                _list_tags=targets[14:]
-                message = self.spam_message
-                for target_mention in _list_mention:
-                    message = message + '\n @' + target_mention + ' '
-                if self.running_bot.status!='OK':
-                    try:
+                if self.STOP is True:
+                    if self.running_bot is not None and self.running_bot.status=='OK':
+                        self.running_bot.status='init'
                         self.running_bot.close()
-                    except:
-                        print('close')
-                    self.running_bot=self.get_next_running_bot()
-
-                _list_tagged =self.running_bot.TweetSomething(self.spam_message,_list_mention,self.spam_picture, _list_tags)
-                _num_target_spam=len(_list_tagged)
-                if _num_target_spam > 0:
-                    self.dir.number_post=self.dir.number_post+1
-                    self.dir.status='RUNNING'
-                    self.dir.target_index=self.dir.target_index+24
-                    self.dir.num_target_spam=self.dir.num_target_spam+_num_target_spam
-                    self.dir.write_user_spam(_list_tagged)
+                    self.dir.status='PAUSE'
                 else:
-                    self.dir.status = 'ERROR'
+
+                    targets=self.list_target[self.dir.target_index:self.dir.target_index+24]
+                    _list_mention=targets[0:14]
+                    _list_tags=targets[14:]
+                    message = self.spam_message
+                    for target_mention in _list_mention:
+                        message = message + '\n @' + target_mention + ' '
+                    if self.running_bot.status!='OK':
+                        try:
+                            self.running_bot.close()
+                        except:
+                            print('close')
+                        self.running_bot=self.get_next_running_bot()
+
+                    _list_tagged =self.running_bot.TweetSomething(self.spam_message,_list_mention,self.spam_picture, _list_tags)
+                    _num_target_spam=len(_list_tagged)
+                    if _num_target_spam > 0:
+                        self.dir.number_post=self.dir.number_post+1
+                        self.dir.status='RUNNING'
+                        self.dir.target_index=self.dir.target_index+24
+                        self.dir.num_target_spam=self.dir.num_target_spam+_num_target_spam
+                        self.dir.write_user_spam(_list_tagged)
+                    else:
+                        self.dir.status = 'ERROR'
 
             self.dir.status='DONE'
             self.set_value()

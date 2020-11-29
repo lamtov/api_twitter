@@ -42,7 +42,12 @@
                     }
                 });
             };
-
+            $("#stop_resum").click(function(){
+              $.post("/stop_resume ", function(status){
+                alert("Status: " + status['message']);
+                $('#span_status').text(status['flag'])
+              });
+            });
             var do_get_thread_info = function () {
                 $.ajax({
                     type: "GET",
@@ -89,7 +94,7 @@
                 </div>
             </div>
             <div style="margin-top: 5px; padding-left: 45px;">
-                <span>Running ...</span>
+                <span id="span_status">Running ...</span>
             </div>
         </div>
     </div>
@@ -161,7 +166,7 @@
                     </div>
 
                 </form>
-                <button type="submit" class="btn btn-danger" style="width: 50%; min-height: 45px;">Stop</button>
+                <button type="submit" id='stop_resum' class="btn btn-danger" style="width: 50%; min-height: 45px;">Stop</button>
             </div>
 
             <div class="col-9">
