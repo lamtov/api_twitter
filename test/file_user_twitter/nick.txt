@@ -1,4 +1,4 @@
-lane287279067|To01111995
+eazylook|thinker_vht123
 LamVna|To01111995
 lane287279071|To01111995
 lane287279072|To01111995
@@ -9,3 +9,8 @@ lane287279076|To01111995
 lane287279077|To01111995
 lane287279078|To01111995
 lane287279079|To01111995
+
+
+binance
+Remitano
+https://coinmarketcap.com/vi/currencies/bitcoin/
